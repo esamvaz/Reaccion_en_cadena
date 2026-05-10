@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CORTOMETRAJE</title>
+  <style>
+    body {
+  font-family: 'Roboto', sans-serif;
+ background-image: url(https://images7.alphacoders.com/316/thumb-1920-316707.jpg);
+ color: white;
+}
+
+#menu {
+  z-index: 2;
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #DC052D;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #DC052D, #DC052D);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%,-30%);
+}
+
+.encabezado{
+  width: 75vw;
+  height: 10vh;
+  border: black solid 2px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.seccion1{
+  width: 80vw;
+  height: 320vh;
+  
+  margin: auto;
+}
+
+.poster{
+  height: 165vh;
+  width: 60vw;
+  border: black solid 2px;
+  margin: 30px auto;
+}
+
+.info{
+  width: 70vw;
+  height: 138vh;
+  
+  margin: auto;
+}
+
+.seccion2{
+  width: 80vw;
+  height: 350vh;
+  
+  margin: 20px auto;
+}
+
+.info2{
+  width: 75vw;
+  height: 135vh;
+  border: black solid 2px;
+  margin: 10px auto;
+}
+.seccion3
+{
+  display: flex;
+width: 70vw;
+height: 69vh;
+
+}
+
+.caja
+{
+  width: 35vw;
+  height: 69vh;
+  border: black solid 2px;
+}
+
+.h1{
+  margin: auto;
+  width: 15vw;
+  height: 10vh;
+  border: black solid 2px;
+  text-align: center;
+}
+
+.h2{
+  width: 35vw;
+  height: 59vh;
+}
+
+.trailer{
+  height: 100vh;
+  width: 60vw;
+  border: black solid 2px;
+  margin: 30px auto;
+}
+.corto{
+  height: 100vh;
+  width: 60vw;
+  border: black solid 2px;
+  margin: 30px auto;
+}
+  </style>
+
+	<script>function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+  }</script>
+</head>
+<body>
+
+	<div id="menu">
+    <div id="menu-bar" onclick="menuOnClick()">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+    </div>
+  <nav class="nav" id="nav">
+    <ul>
+      <li><a href="index.html">PORTADA</a></li>
+      <li><a href="CONTEXTO.html">CONTEXTO</a></li>
+      <li><a href="CORTO.html">CORTO</a></li>
+      <li><a href="EQUIPO.html">EQUIPO</a></li>
+    </ul>
+  </nav> 
+  </div>
+
+<div class="menu-bg" id="menu-bg"></div>
+        
+        <div class="menu menu-closed">
+            
+        </div>
+
+        <header class="encabezado">
+          <h1>CORTOMETRAJE</h1>
+        </header>
+
+        <section class="seccion1">
+        	<article class="poster">
+           <img src="https://i.pinimg.com/736x/0e/30/a6/0e30a68e12902ebc6e887908ab11e7a4.jpg" width="100%">
+          </article>
+        	<article class="info">
+           <div class="seccion3">
+             <div class="caja">
+                <div class="h1">DESCRIPCION DE LA HISTORIA</div>
+                <div class="h2">
+                  Ambientada en la Segunda Guerra Mundial, la historia sigue a dos científicos que en su juventud compartieron ideales y formación, pero que terminan separados por el conflicto bélico, trabajando para bandos opuestos: uno en Estados Unidos y otro en Alemania.
+A lo largo del cortometraje, se muestra cómo ambos son reclutados y presionados para contribuir al desarrollo de tecnología nuclear. Mientras avanzan en sus investigaciones, sus vidas personales se ven afectadas por la guerra: cartas, pérdidas familiares y decisiones difíciles los llevan a cuestionar el verdadero propósito de su trabajo.
+La narrativa avanza en paralelo, contrastando el progreso científico con el deterioro emocional de los personajes, hasta llegar a un desenlace marcado por la creación de la bomba atómica y sus consecuencias. Finalmente, la historia deja ver el vacío, la culpa y la reflexión sobre el impacto de sus acciones en la humanidad.
+
+                </div>
+              </div>
+             <div class="caja">
+                <div class="h1"> FASES DE GRABACION</div>
+                <div class="h2">
+                  Fue bastante entretenido iniciar la grabación, más que nada al principio, ya que todos estábamos emocionados por ver cómo quedaría el resultado final y por empezar a trabajar en el proyecto. Desde el inicio hubo un ambiente bastante bueno, porque cada escena que grabábamos nos hacía imaginar cómo se vería todo al terminar la edición. Además, fue una experiencia diferente a las actividades normales, ya que pudimos convivir más como equipo y organizarnos para que todo saliera bien.
+
+Sin embargo, aunque fue divertido, también resultó bastante cansado. Tuvimos que salir del coba e irnos a distintos lugares para grabar, lo que implicó caminar, mover el equipo y repetir escenas varias veces hasta que quedaran bien. A veces el clima, el ruido o algunos errores hacían que tardáramos más de lo esperado, por lo que terminábamos agotados. Aun así, el esfuerzo valió la pena porque aprendimos muchas cosas sobre la grabación, la paciencia y el trabajo en equipo, además de que al final nos quedó la satisfacción de haber realizado el proyecto por nosotros mismos.
+ 
+                </div>
+              </div>
+           </div>
+           <div class="seccion3">
+              <div class="caja">
+                <div class="h1"> ACTORES</div>
+                <div class="h2">
+                  <ul>
+                    <li>BADILLO RAMIREZ ALVARO ABRAHAM</li>
+                    <li>CERDA CARRIZALES OCTAVIO</li>
+                    <li>GUZMAN RIVERA ANDRES MICHEL</li>
+                    <li> MONJARAS PEREZ JOAQUIN</li>
+                    <li> ABRAHAM MONJARAZ PEREZ (EXTRA)</li>
+                    <li>EMILIANO RAMOS (EXTRA)</li>
+                    <li> ANDREA ABIGAIL (EXTRA)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="caja">
+                <div class="h1"> LOCACIONES</div>
+                <div class="h2">
+                  <ul>
+                    <li>https://maps.app.goo.gl/jyRK5uCYuqXmCWVUA?g_st=aw</li>
+                    <li>https://maps.app.goo.gl/bt8JukMGdCBqwr4E8?g_st=aw</li>
+                    <li>https://maps.app.goo.gl/7S2rZhxRbTna54TB8?g_st=aw</li>
+                    <li>https://maps.app.goo.gl/YU6GngFVMAqE7sh37?g_st=iw</li>
+                    <li>https://maps.apple/p/dn2n0ywnLK.JLH</li>
+                    <li>https://maps.app.goo.gl/zvWduUHnYPGMmsHfA?g_st=ic</li>
+                    <li>https://maps.app.goo.gl/eVD5RHVByZ5z6BZW6?g_st=ic</li>
+                  </ul>
+                </div>
+              </div>
+           </div> 
+          </article>
+        </section>
+
+        <section class="seccion2">
+        	<article class="info2">
+           <img src="https://i.pinimg.com/736x/64/3e/27/643e2786e43d4c3631517ee6229d6f8a.jpg" width="100%"> 
+          </article>
+        	<article class="trailer">
+         TRAILER
+          </article>
+        	<article class="corto">
+           CORTO 
+          </article>
+        	
+        </section>
+</body>
+</html>

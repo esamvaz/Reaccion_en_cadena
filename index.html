@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PORTADA</title>
+	<style>
+		
+		.encabezado{
+	width: 85vw;
+	height: 20vh;
+	border: black solid 2px;
+	margin: 10px auto;
+	text-align: center;
+	font-size: calc(2em);
+ }
+
+ .seccion{
+ 	width: 80vw;
+ 	height: 230vh;
+ 	
+ 	margin: auto;
+ }
+
+ .footer{
+ 	width: 85vw;
+ 	height: 15vh;
+ 	margin: 10px auto;
+ 	border: black solid 2px;
+}
+
+.img{
+	width: 75vw;
+	height:205vh;
+	border: black solid 2px;
+	margin: 10px auto;
+}
+
+.inf{
+	width: 75vw;
+	height:15vh;
+	border: black solid 2px;
+	margin: auto;
+	
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+ background-image: url(https://images7.alphacoders.com/316/thumb-1920-316707.jpg);
+ color: white;
+}
+
+#menu {
+  z-index: 2;
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #DC052D;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #DC052D, #DC052D);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%,-30%);
+}
+	</style>
+
+	<script>function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+}</script>
+</head>
+<body>
+		
+	<div id="menu">
+  <div id="menu-bar" onclick="menuOnClick()">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+  </div>
+  <nav class="nav" id="nav">
+    <ul>
+      <li><a href="index.html">PORTADA</a></li>
+      <li><a href="CONTEXTO.html">CONTEXTO</a></li>
+      <li><a href="CORTO.html">CORTO</a></li>
+      <li><a href="EQUIPO.html">EQUIPO</a></li>
+    </ul>
+  </nav> 
+</div>
+
+<div class="menu-bg" id="menu-bg"></div>
+        
+        <div class="menu menu-closed">
+            
+        </div>
+
+	<header class="encabezado">
+		<h1>LA BOMBA ATOMICA</h1>
+	</header>
+
+	<section class="seccion">
+		<div class="img">
+			<img src="https://i.pinimg.com/736x/0e/30/a6/0e30a68e12902ebc6e887908ab11e7a4.jpg" width="100%">
+		</div>
+
+		<article class="inf">Durante la Segunda Guerra Mundial, dos científicos que alguna vez fueron cercanos terminan en bandos opuestos, participando en el desarrollo nuclear de sus países. Entre decisiones difíciles y pérdidas personales, ambos se encaminan hacia un desenlace que cambiará sus vidas y la historia para siempre.</article>
+	</section>
+
+	<footer class="footer">Este cortometraje refleja el conflicto entre la ciencia y la ética en tiempos de guerra, mostrando cómo las decisiones individuales pueden tener consecuencias globales. Inspirado en los acontecimientos que llevaron al desarrollo de la bomba atómica, invita a reflexionar sobre el verdadero costo del progreso.</footer>
+
+</body>
+</html>
