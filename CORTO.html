@@ -175,17 +175,21 @@ height: 69vh;
   height: 59vh;
 }
 
-.trailer{
-  height: 100vh;
-  width: 60vw;
-  border: black solid 2px;
-  margin: 30px auto;
+.video{
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding-bottom: 45%;
 }
-.corto{
-  height: 100vh;
-  width: 60vw;
-  border: black solid 2px;
-  margin: 30px auto;
+
+.video iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
 }
   </style>
 
@@ -285,9 +289,11 @@ Sin embargo, aunque fue divertido, también resultó bastante cansado. Tuvimos q
         	<article class="info2">
            <img src="https://i.pinimg.com/736x/64/3e/27/643e2786e43d4c3631517ee6229d6f8a.jpg" width="100%"> 
           </article>
-        	<article class="trailer">
-         <iframe width="100vh" height="60vw" src="https://www.youtube.com/embed/tG5e8-F3T5s?si=M6WaRD5hLpcfs_8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        	<article class="video">
+         <iframe src="https://www.youtube.com/embed/tG5e8-F3T5s?si=M6WaRD5hLpcfs_8n" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
           </article>
+          <div class="video">
+          </div>
         	<article class="corto">
            CORTO 
           </article>
